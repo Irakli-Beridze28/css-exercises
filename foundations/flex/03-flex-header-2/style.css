@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -27,6 +31,9 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 button {
@@ -35,6 +42,10 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+  flex: 1;
 }
 
 a {
@@ -45,4 +56,26 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 18px;
+  /* margin-left: 18px; */
+}
+
+/* .left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+THIS TWO IS MY CODE, BELOW IS WAY BETTER CODE, SOLUTION OF T.O.P. BE CAREFUL!!!
+.right-side {
+  display: flex;
+  align-items: center;
+} */
+
+.left-side, .right-side {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
