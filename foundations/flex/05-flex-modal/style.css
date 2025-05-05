@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
+  display: flex;
+  /* gap: 15px; this could have been better - from solution of TOP  */
 }
 
 .icon {
@@ -66,4 +69,24 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 22px;
+  /* flex-grow: 1; */
+  flex: 1;
+}
+
+.vertical-icon {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.text-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  gap: 10px;
 }
