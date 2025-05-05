@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +26,96 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+}
+
+.header .left-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;  
+  padding: 0px 10px 0px 10px;
+}
+
+.header .right-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0px 10px 0px 10px;
+}
+
+.header .right-links li, .header .left-links li {
+  padding: 0px 10px 0px 10px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+.footer .left-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;  
+  padding: 0px 10px 0px 10px;
+}
+
+.footer .right-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0px 10px 0px 10px;
+}
+
+.footer .right-links li, .footer .left-links li {
+  padding: 0px 10px 0px 10px;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
